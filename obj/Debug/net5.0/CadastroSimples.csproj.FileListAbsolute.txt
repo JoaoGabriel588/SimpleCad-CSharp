@@ -1,0 +1,16 @@
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\CadastroSimples.exe
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\CadastroSimples.deps.json
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\CadastroSimples.runtimeconfig.json
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\CadastroSimples.runtimeconfig.dev.json
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\CadastroSimples.dll
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\ref\CadastroSimples.dll
+C:\Users\Estagiário João\source\repos\CadastroSimples\bin\Debug\net5.0\CadastroSimples.pdb
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.csproj.AssemblyReference.cache
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.AssemblyInfoInputs.cache
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.AssemblyInfo.cs
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.csproj.CoreCompileInputs.cache
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.dll
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\ref\CadastroSimples.dll
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.pdb
+C:\Users\Estagiário João\source\repos\CadastroSimples\obj\Debug\net5.0\CadastroSimples.genruntimeconfig.cache
