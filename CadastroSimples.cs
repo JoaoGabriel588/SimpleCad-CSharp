@@ -30,7 +30,7 @@ namespace CadastroSimples {
                 int escolha = int.Parse(Console.ReadLine());
 
                 switch (escolha) {
-                    case 1:
+                    case 1: // Cadastro
 
                         if (nome == null && cpf == null && idade == null && sexo == null) {
                             Console.WriteLine("\n# - Iniciando sessão de cadastro...\n");
@@ -49,7 +49,6 @@ namespace CadastroSimples {
                                 Console.WriteLine("# [2] - Feminino");
                                 Console.WriteLine("# [3] - Outro...");
                                 Console.Write("# - Digite: ");
-
                                 sexo_escolha = int.Parse(Console.ReadLine());
 
                                 if (sexo_escolha == 1) {
@@ -73,10 +72,10 @@ namespace CadastroSimples {
                             Console.WriteLine("\n# # # # # FICHA DE CADASTRO # # # # #");
                             Console.WriteLine("#                                   #");
                             Console.WriteLine("#                                   #");
-                            Console.WriteLine("#      NOME: " + nome);
-                            Console.WriteLine("#      IDADE: " + idade);
-                            Console.WriteLine("#      CPF: " + cpf);
-                            Console.WriteLine("#      SEXO: " + sexo);
+                            Console.WriteLine($"#      NOME: {nome}");
+                            Console.WriteLine($"#      IDADE: {idade}");
+                            Console.WriteLine($"#      CPF: {cpf}");
+                            Console.WriteLine($"#      SEXO: {sexo}");
                             Console.WriteLine("#                                   #");
                             Console.WriteLine("#                                   #");
                             Console.WriteLine("# # # # # FICHA DE CADASTRO # # # # #\n");
@@ -88,28 +87,80 @@ namespace CadastroSimples {
 
                         break;
 
-                    case 2:
+                    case 2: // Edição
 
                         Console.WriteLine("\n[!] - Erro no sistema");
-                        Console.WriteLine("Coming Soon....");
+                        Console.WriteLine("Coming Soon....\n");
 
                         break;
 
-                    case 3:
+                    case 3: // Verificação
 
-                        Console.WriteLine("\n[!] - Erro no sistema");
-                        Console.WriteLine("Coming Soon.....");
+                        Console.WriteLine("\nProcessando visualização de dados...\n");
+
+                        if (nome == null && cpf == null && idade == null && sexo == null) {
+                            Console.WriteLine("[!] - Erro no sistema.");
+                            Console.WriteLine("[!] - Motivo: Você não pode visualizar se nem todos os campos estão preenchidos!\n");
+                        } else {
+                            Console.WriteLine("# # # # # # # # # TELA DE VISUALIZAÇÃO # # # # # # # # #");
+                            Console.WriteLine("#                                                      #");
+                            Console.WriteLine("#                                                      #");
+                            Console.WriteLine($"#      Nome Registrado: {nome}");
+                            Console.WriteLine($"#      Idade Registrada: {idade}");
+                            Console.WriteLine($"#      CPF Registrado: {cpf}");
+                            Console.WriteLine($"#      Sexo Registrado: {sexo}");
+                            Console.WriteLine("#                                                      #");
+                            Console.WriteLine("#                                                      #");
+                            Console.WriteLine("# # # # # # # # # TELA DE VISUALIZAÇÃO # # # # # # # # #\n");
+                        }
 
                         break;
 
-                    case 4:
+                    case 4: // Apagar
 
-                        Console.WriteLine("\n[!] - Erro no sistema");
-                        Console.WriteLine("Coming Soon....");
+                        Console.WriteLine("\n# - Processando ação de deletar dados...\n");
+
+                        if (nome == null && cpf == null && idade == null && sexo == null) {
+                            Console.WriteLine("[!] - Erro no sistema.");
+                            Console.WriteLine("[!] - Não é possível apagar os dados, é preciso que haja um cadastro no sistema para realizar essa ação!\n");
+                        } else {
+                            Console.WriteLine("# - Você deseja apagar todos os dados cadastrados?");
+                            
+                            Console.WriteLine("# [1] - Sim");
+                            Console.WriteLine("# [2] - Não");
+                            Console.Write("# - Selecione: ");
+                            int escolha_D = int.Parse(Console.ReadLine());
+
+                            switch (escolha_D) { 
+
+                                case 1:
+
+                                    nome = null;
+                                    cpf = null;
+                                    idade = null;
+                                    sexo = null;
+
+                                    Console.WriteLine("# - Apaguei todos os dados cadastrados no sistema!\n");
+                                    break;
+                                case 2:
+
+                                    Console.WriteLine("# - Certo, não apaguei nenhum dado do sistema!\n");
+
+                                    break;
+
+                                default:
+
+                                    Console.WriteLine("[!] - Erro no sistema.");
+                                    Console.WriteLine("[!] - Você inseriu um valor inválido!\n");
+
+                                    break;
+                            }
+
+                        }
 
                         break;
 
-                    case 5:
+                    case 5: // Sair
 
                         w = 1;
                         Console.Write("Pressione enter para fechar o console...");
@@ -117,7 +168,7 @@ namespace CadastroSimples {
 
                         break;
 
-                    default:
+                    default: // Valor inválido
 
                         Console.WriteLine("\n[!] - Erro no Sistema");
                         Console.WriteLine("Você inseriu um valor inválido.\n");
